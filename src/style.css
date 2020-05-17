@@ -7,6 +7,7 @@
   background-color: #312A37;
   color: white;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav{
@@ -55,6 +56,19 @@ nav{
   transform: translate(-50%, -50%);
 }
 
+.center-bottom{
+  position: absolute;
+  top: 100vh;
+  left: 50vw;
+  transform: translate(-50%, -100%);
+}
+.center-top{
+  position: absolute;
+  top: 4vh;
+  left: 50vw;
+  transform: translate(-50%, -100%);
+}
+
 .frontParagraph{
   text-align: center;
 }
@@ -71,4 +85,13 @@ i:hover{
   transition: 0.5s;
   color: white;
   cursor: pointer;
+}
+
+
+section {
+  padding-top: 1em;
+  position: relative;
+  height:100vh;
+  box-sizing:border-box;
+  display: block;
 }

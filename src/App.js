@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-import { render } from '@testing-library/react';
 
 const accentStyle = {
   color: "#BF6464",
@@ -34,28 +33,38 @@ function Introduction() {
       <span>See my work below</span>
       <br></br>
       <br></br>
-      <i className="fas fa-chevron-down" style={huge}></i>
+      <a href="#Projects"><i className="fas fa-chevron-down" style={huge}></i></a>
     </div>
   )
 }
 function App() {
   return (
     <div>
-      <nav>
-        <div className="logo">
-          <h1><span style={accentStyle}>></span>Suoranta_</h1>
-        </div>
-        <ul className="nav-links">
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <a href="#">Language</a>
-          </li>
-        </ul>
-      </nav>
-      <Introduction></Introduction>
-
-    </div>
+      <section id="Landing">
+        <nav>
+          <div className="logo">
+            <h1><span style={accentStyle}>></span>Suoranta_</h1>
+          </div>
+          <ul className="nav-links">
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li>
+              <a href="#">Language</a>
+            </li>
+          </ul>
+        </nav>
+        <Introduction></Introduction>
+      </section>
+      <section id="Projects">
+        <h1>Projects</h1>
+        <a href="#Landing" className="center-top"><i className="fas fa-chevron-up" style={huge}></i></a>
+        <a href="#Contact" className="center-bottom"><i className="fas fa-chevron-down" style={huge}></i></a>
+      </section>
+      <section id="Contact">
+        <h1>Contact</h1>
+        <a href="#Projects" className="center-top"><i className="fas fa-chevron-up" style={huge}></i></a>
+      </section>
+      </div>
   );
 }
 
