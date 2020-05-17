@@ -48,9 +48,6 @@ function App() {
           <ul className="nav-links">
             <li><a href="#Projects">Projects</a></li>
             <li><a href="#Contact">Contact</a></li>
-            <li>
-              <a href="#">Language</a>
-            </li>
           </ul>
         </nav>
         <Introduction></Introduction>

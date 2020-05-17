@@ -28,7 +28,7 @@ nav{
 .nav-links{
   grid-column: 5/5;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
   grid-gap: 1em;
   width: 10%;
   font-size: 28px;
