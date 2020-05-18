@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
-  margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  margin: 0px;
   background-color: #312A37;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -20,6 +19,17 @@ nav{
   min-height: 5vh;
 }
 
+/*For some reason this is required to make scroll snapping work in chrome*/
+html,body{
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+/*And this is needed to hide the other scroll bar...*/
+html{
+  overflow-y: hidden;
+}
+
 .logo{
   padding-left: 1em;
   font-size: 36px;
@@ -28,7 +38,7 @@ nav{
 .nav-links{
   grid-column: 5/5;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
   grid-gap: 1em;
   width: 10%;
   font-size: 28px;
@@ -50,21 +60,20 @@ nav{
 }
 
 .center{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .center-bottom{
-  position: absolute;
+  position: relative;
   top: 100vh;
   left: 50vw;
   transform: translate(-50%, -100%);
 }
 .center-top{
   position: absolute;
-  top: 4vh;
   left: 50vw;
   transform: translate(-50%, -100%);
 }
@@ -87,11 +96,39 @@ i:hover{
   cursor: pointer;
 }
 
+.child {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
 
 section {
-  padding-top: 1em;
   position: relative;
-  height:100vh;
-  box-sizing:border-box;
-  display: block;
+  scroll-snap-stop: always;
+  scroll-snap-align: center;
+  height: 100vh;
+}
+
+.section-header{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5vh;
+  padding-left: 1em;
+  font-size: 32px;
+}
+.carousel-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 90vh;
+}
+.card{
+  min-height: 90vh;
+  background-color: #2A2131;
 }

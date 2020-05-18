@@ -37,31 +37,51 @@ function Introduction() {
     </div>
   )
 }
-function App() {
-  return (
-    <div>
-      <section id="Landing">
-        <nav>
+
+function Carousel(){
+
+}
+
+function Navbar(){
+  return(
+    <nav>
           <div className="logo">
             <h1><span style={accentStyle}>></span>Suoranta_</h1>
           </div>
           <ul className="nav-links">
+            <li><a href="#Home">Home</a></li>
             <li><a href="#Projects">Projects</a></li>
             <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
+  )
+}
+function App() {
+  return (
+    <div className="container">
+      <section id="Landing" >
+        <Navbar></Navbar>
         <Introduction></Introduction>
       </section>
-      <section id="Projects">
-        <h1>Projects</h1>
-        <a href="#Landing" className="center-top"><i className="fas fa-chevron-up" style={huge}></i></a>
-        <a href="#Contact" className="center-bottom"><i className="fas fa-chevron-down" style={huge}></i></a>
+      <section id="Projects" >
+        <div className="section-header">
+        <h1><span style={accentStyle}>></span>Projects_</h1>
+        </div>
+        
+        <div className="carousel-grid">
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+        </div>
       </section>
       <section id="Contact">
-        <h1>Contact</h1>
-        <a href="#Projects" className="center-top"><i className="fas fa-chevron-up" style={huge}></i></a>
+        <div className="section-header">
+        <h1><span style={accentStyle}>></span>Contact_</h1>
+        </div>
+        
+          {/*<a href="#Projects" className="center-top"><i className="fas fa-chevron-up" style={huge}></i></a> */}
       </section>
-      </div>
+    </div>
   );
 }
 
