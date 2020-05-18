@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 
 const accentStyle = {
@@ -43,32 +43,35 @@ function Carousel(){
 
 }
 */
-function Navbar(){
-  return(
+function Navbar(props) {
+  const section = useState(props.section)
+  return (
     <nav>
-          <div className="logo">
-            <h1><span style={accentStyle}>></span>Suoranta_</h1>
-          </div>
-          <ul className="nav-links">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
-        </nav>
+      <ul className="nav-links">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
   )
 }
 function App() {
+  const [section, setSection] = useState("")
   return (
     <div className="container">
-      <section id="Landing" >
-        <Navbar></Navbar>
+      <Navbar section={section}></Navbar>
+      <section id="Home" >
+        <div className="section-header">
+          <h1><span style={accentStyle}>></span>Suoranta_</h1>
+        </div>
         <Introduction></Introduction>
       </section>
+
       <section id="Projects" >
         <div className="section-header">
-        <h1><span style={accentStyle}>></span>Projects_</h1>
+          <h1><span style={accentStyle}>></span>Projects_</h1>
         </div>
-        
+
         <div className="carousel-grid">
           <div className="card"></div>
           <div className="card"></div>
@@ -77,10 +80,10 @@ function App() {
       </section>
       <section id="Contact">
         <div className="section-header">
-        <h1><span style={accentStyle}>></span>Contact_</h1>
+          <h1><span style={accentStyle}>></span>Contact_</h1>
         </div>
-        
-          {/*<a href="#Projects" className="center-top"><i className="fas fa-chevron-up" style={huge}></i></a> */}
+
+        {/*<a href="#Projects" className="center-top"><i className="fas fa-chevron-up" style={huge}></i></a> */}
       </section>
     </div>
   );
