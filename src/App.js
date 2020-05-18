@@ -55,6 +55,22 @@ function Navbar(props) {
     </nav>
   )
 }
+
+function Card(props){
+  const background = useState(props.background)
+  return(
+    <div className="card" style={{backgroundImage: "url("+{background}+")"}}>
+      <h1>Project title</h1>
+      <div></div>
+      <div>
+      <i className="fas fa-code" style={huge}></i>
+      <i className="fas fa-external-link-alt" style={huge}></i>
+      </div>
+      
+
+    </div>
+  )
+}
 function App() {
   const [section, setSection] = useState("")
   return (
@@ -73,9 +89,9 @@ function App() {
         </div>
 
         <div className="carousel-grid">
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
+          <Card background={"https://via.placeholder.com/150"}></Card>
+          <Card></Card>
+          <Card></Card>
         </div>
       </section>
       <section id="Contact">
