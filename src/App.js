@@ -38,10 +38,11 @@ function Introduction() {
   )
 }
 
+/*
 function Carousel(){
 
 }
-
+*/
 function Navbar(){
   return(
     <nav>
