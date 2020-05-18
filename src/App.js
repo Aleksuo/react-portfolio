@@ -43,8 +43,7 @@ function Carousel(){
 
 }
 */
-function Navbar(props) {
-  const section = useState(props.section)
+function Navbar() {
   return (
     <nav>
       <ul className="nav-links">
@@ -72,10 +71,9 @@ function Card(props){
   )
 }
 function App() {
-  const [section, setSection] = useState("")
   return (
     <div className="container">
-      <Navbar section={section}></Navbar>
+      <Navbar></Navbar>
       <section id="Home" >
         <div className="section-header">
           <h1><span style={accentStyle}>></span>Suoranta_</h1>
