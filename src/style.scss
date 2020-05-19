@@ -133,16 +133,60 @@ section:nth-of-type(2n){
   align-items: center;
   min-height: 90vh;
 }
+
+
 .card{
+  position: relative;
+  background-color:#1E1824;
+  background-image: url("https://via.placeholder.com/1024");
+  background-size: cover;
+  width: 30vw;
+  height: 30vw;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 2px;
   display: grid;
   grid-auto-rows: 1fr;
   justify-content: space-around;
   align-items: center;
   grid-gap:1em;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 15px;
-  min-height: 60vh;
-  background-color:#1E1824;
-  background-image: url("https://via.placeholder.com/512");
-  background-size: cover;
+}
+
+@media only screen and (max-width: 1024px){
+  .card{
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    background-color:#1E1824;
+    background-image: url("https://via.placeholder.com/512");
+    background-size: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 2px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap:1em;
+  }
+}
+
+.inside-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.card-info{
+  width: 96%;
+  height: 96%;
+  position:absolute;
+  background: #BF6464;
+  padding: 1em;
+  border-radius: 0px;
+  clip-path: circle(5% at 100% 10%);
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    clip-path: circle(90%);
+    background: #312A37;
+  }
 }

@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import './style.css';
+import { useMediaQuery } from 'react-responsive'
+import './style.scss';
+
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 
 const accentStyle = {
   color: "#BF6464",
@@ -55,22 +59,28 @@ function Navbar() {
   )
 }
 
-function Card(props){
+function Card(props) {
   const background = useState(props.background)
-  return(
-    <div className="card" style={{backgroundImage: "url("+{background}+")"}}>
-      <h1>Project title</h1>
-      <div></div>
-      <div>
-      <i className="fas fa-code" style={huge}></i>
-      <i className="fas fa-external-link-alt" style={huge}></i>
-      </div>
-      
-
+  return (
+    <div className="card" style={{ backgroundImage: "url(" + { background } + ")" }}>
+        <div className="card-info"></div>
+        <h1>Project title</h1>
+        <div></div>
+        <div>
+          <i className="fas fa-code" style={huge}></i>
+          <i className="fas fa-external-link-alt" style={huge}></i>
+        </div>
     </div>
   )
 }
 function App() {
+  const isDesktopOrLaptop = useMediaQuery({ minDeviceWidth: 1224 })
+  const isBigScreen = useMediaQuery({ minDeviceWidth: 1824 })
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 })
+  const isTabletOrMobileDevice = useMediaQuery({ maxDeviceWidth: 1224 })
+  const isPortrait = useMediaQuery({ orientation: 'portrait' })
+  const isRetina = useMediaQuery({ minResolution: '2dppx' })
+ 
   return (
     <div className="container">
       <Navbar></Navbar>
@@ -81,16 +91,37 @@ function App() {
         <Introduction></Introduction>
       </section>
 
-      <section id="Projects" >
+      <section id="Projects">
         <div className="section-header">
           <h1><span style={accentStyle}>></span>Projects_</h1>
         </div>
-
+        {
+          isTabletOrMobile && 
+          <Carousel arrows dots slidesPerPage={1} infinite>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </Carousel>
+        }
+        {isDesktopOrLaptop && 
+           <Carousel arrows dots slidesPerPage={3} infinite>
+           <Card></Card>
+           <Card></Card>
+           <Card></Card>
+           <Card></Card>
+           <Card></Card>
+           <Card></Card>
+         </Carousel>
+        }      
+        {/*}
         <div className="carousel-grid">
           <Card background={"https://via.placeholder.com/150"}></Card>
           <Card></Card>
           <Card></Card>
-        </div>
+  </div>*/}
       </section>
       <section id="Contact">
         <div className="section-header">
