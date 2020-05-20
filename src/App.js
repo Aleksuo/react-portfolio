@@ -1,9 +1,8 @@
-import React, { useState} from 'react'
+import React  from 'react'
 import useViewPort from './Hooks/UseViewPort'
 import Card from './Components/Card'
 import Navbar from './Components/Navbar'
 import Introduction from './Components/Introduction'
-import IconRow from './Components/IconRow'
 import './style.scss'
 
 import Carousel from '@brainhubeu/react-carousel'
