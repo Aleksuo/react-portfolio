@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
+import useViewPort from './Hooks/UseViewPort'
 import './style.scss';
 
 import Carousel from '@brainhubeu/react-carousel';
@@ -57,17 +58,7 @@ function Card(props) {
   )
 }
 
-function useViewPort() {
-  const [width, setWidth] = React.useState(window.innerWidth)
 
-  useEffect(() =>{
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    window.addEventListener("resize", handleWindowResize)
-    return () => window.removeEventListener("resize", handleWindowResize)
-  },[])
-
-  return {width}
-}
 
 function App() {
   const {width} = useViewPort()
