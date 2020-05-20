@@ -4,11 +4,6 @@ import './style.scss';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-const accentStyle = {
-  color: "#BF6464",
-}
-
-
 function IconRow() {
   return (
     <span className="huge">
@@ -22,7 +17,7 @@ function Introduction() {
   return (
     <div className="center frontParagraph">
       <h1 className="huge">
-        <span style={accentStyle}>></span>Full Stack Developer_
+        <span className="accent-style">></span>Full Stack Developer_
       </h1>
       <br></br>
       <IconRow></IconRow>
@@ -87,14 +82,14 @@ function App() {
 
       <section id="Home" >
         <div className="section-header">
-          <h1><span style={accentStyle}>></span>Suoranta_</h1>
+          <h1><span className="accent-style">></span>Suoranta_</h1>
         </div>
         <Introduction></Introduction>
       </section>
 
       <section id="Projects">
         <div className="section-header">
-          <h1><span style={accentStyle}>></span>Projects_</h1>
+          <h1><span className="accent-style">></span>Projects_</h1>
         </div>
         {
           width < breakpoint ?
@@ -118,7 +113,7 @@ function App() {
       </section>
       <section id="Contact">
         <div className="section-header">
-          <h1><span style={accentStyle}>></span>Contact_</h1>
+          <h1><span className="accent-style">></span>Contact_</h1>
         </div>
       </section>
     </div>
