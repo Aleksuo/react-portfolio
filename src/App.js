@@ -7,9 +7,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 const accentStyle = {
   color: "#BF6464",
 }
-const huge = {
-  fontSize: "48px"
-}
+
 
 const socialIcons = {
   fontSize: "48px"
@@ -27,7 +25,7 @@ function IconRow() {
 function Introduction() {
   return (
     <div className="center frontParagraph">
-      <h1 style={huge}>
+      <h1 className="huge">
         <span style={accentStyle}>></span>Full Stack Developer_
       </h1>
       <br></br>
@@ -36,7 +34,7 @@ function Introduction() {
       <span>See my work below</span>
       <br></br>
       <br></br>
-      <a href="#Projects"><i className="fas fa-chevron-down" style={huge}></i></a>
+      <a href="#Projects"><i className="fas fa-chevron-down huge"></i></a>
     </div>
   )
 }
@@ -61,8 +59,8 @@ function Card(props) {
       <h1>Project title</h1>
       <div></div>
       <div>
-        <i className="fas fa-code" style={huge}></i>
-        <i className="fas fa-external-link-alt" style={huge}></i>
+        <i className="fas fa-code huge"></i>
+        <i className="fas fa-external-link-alt huge"></i>
       </div>
     </div>
   )
