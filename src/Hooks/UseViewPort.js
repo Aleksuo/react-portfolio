@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function useViewPort() {
-    const [width, setWidth] = React.useState(window.innerWidth)
+    const [width, setWidth] = useState(window.innerWidth)
   
     useEffect(() =>{
       const handleWindowResize = () => setWidth(window.innerWidth)
