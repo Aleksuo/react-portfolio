@@ -1,11 +1,14 @@
 import React from 'react'
 import IconRow from './IconRow'
+import FancyTitle from './FancyTitle'
+
+
 
 function Introduction() {
     return (
       <div className="frontParagraph">
         <h1 className="huge">
-          <span className="accent-style">></span>Full Stack Developer_
+          <FancyTitle>Full Stack Developer</FancyTitle>
         </h1>
         <br></br>
         <IconRow></IconRow>

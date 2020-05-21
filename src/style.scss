@@ -134,24 +134,25 @@ section:nth-of-type(2n){
 .card{
   position: relative;
   background-color:#1E1824;
-  background-image: url("https://via.placeholder.com/1024");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 30vw;
   height: 30vw;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 2px;
   display: grid;
   grid-auto-rows: 1fr;
   justify-content: space-around;
   align-items: center;
   grid-gap:1em;
+  border-radius: 0.5em;
 }
 
 @media only screen and (max-width: 1024px){
   .card{
     position: relative;
     width: 80vw;
-    height: 80vw;
+    height: 80vh;
     background-color:#1E1824;
     background-image: url("https://via.placeholder.com/512");
     background-size: cover;
