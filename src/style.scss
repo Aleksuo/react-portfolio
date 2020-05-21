@@ -53,7 +53,8 @@ html{
 .nav-links a:hover{
   color: #BF6464;
   transition: 0.5s;
-  border-bottom: 5px dotted;
+  border-bottom: 3px dotted;
+  
 }
 
 .nav-links a{
@@ -138,14 +139,18 @@ section:nth-of-type(2n){
   background-repeat: no-repeat;
   background-position: center;
   width: 30vw;
-  height: 30vw;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  height: 70vh;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
   display: grid;
   grid-auto-rows: 1fr;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   grid-gap:1em;
-  border-radius: 0.5em;
+  border-top: 0.35em ridge #BF6464;
+  border-top-left-radius: 5em;
+  border-top-right-radius: 5em;
+  border-bottom-left-radius: -1em;
+  border-bottom-right-radius: -1em;
 }
 
 @media only screen and (max-width: 1024px){
@@ -166,11 +171,6 @@ section:nth-of-type(2n){
   }
 }
 
-.inside-center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 .card-info{
   width: 100%;
@@ -178,15 +178,15 @@ section:nth-of-type(2n){
   position:absolute;
   background: #BF6464;
   padding: inherit;
-  border-radius: 0px;
+  border-radius: inherit;
   display:grid;
   grid-template-rows: repeat(7,1fr);
   grid-template-columns: repeat(1,1fr);
-  clip-path: circle(5% at 100% 10%);
+  clip-path: circle(5% at 50% 0%);
   transition: all .5s ease-in-out;
   cursor: pointer;
   &:hover{
-    clip-path: circle(90%);
+    clip-path: circle(100%);
     background: #312A37;
   }
 }
@@ -201,4 +201,11 @@ section:nth-of-type(2n){
 
 .accent-style{
   color: #BF6464;
+}
+
+.card-icons{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
+  grid-gap: 3em;
 }
