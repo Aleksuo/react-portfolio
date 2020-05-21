@@ -3,7 +3,7 @@ import IconRow from './IconRow'
 
 function Introduction() {
     return (
-      <div className="center frontParagraph">
+      <div className="frontParagraph">
         <h1 className="huge">
           <span className="accent-style">></span>Full Stack Developer_
         </h1>

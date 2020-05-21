@@ -41,6 +41,7 @@ html{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 1em;
+  padding: 1em;
   width: 10%;
   font-size: 28px;
 }
@@ -103,6 +104,10 @@ i:hover{
 }
 
 section {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: 8vh;
+  align-items: center;
   position: relative;
   scroll-snap-stop: always;
   scroll-snap-align: center;
