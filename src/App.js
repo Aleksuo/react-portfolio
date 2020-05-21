@@ -12,6 +12,49 @@ function App() {
   const {width} = useViewPort()
   const breakpoint = 1024
 
+  const projects = [
+    {
+      id: 1,
+      title: "Speech Dismantler",
+      description: "Group project where we created an app for practicing public speaking using principles from User Centered Design. I focused on the UI and implemented the playback -feature.",
+      type: "Group project, School",
+      languages: "Javascript, Css, Html",
+      technologies: "React, Material UI, Nodejs, Google cloud speech, Socket.IO, Heroku, Travis CI",
+      github: "https://github.com/speech-dismantler-5000",
+      demo: "https://speech-dismantler-5000.github.io/SpeechDismantlerFront/"
+    },
+    {
+      id: 2,
+      title: "Robot uprising 2019",
+      description: "We created AI for controlling two robots to play a ball game against other robots. I was responsible for machine vision and I also solved some connection issues.",
+      type: "Group project, Hackathon",
+      languages: "Python, C",
+      technologies: "OpenCV, Websocket, Numpy, Raspberry Pi",
+      github: "https://github.com/TOTALLY-HUMANS/AI2019/tree/balldetection",
+      demo: "link"
+    },
+    {
+      id: 3,
+      title: "Speech explorer project",
+      type: "Group project, School",
+      description: "todo",
+      languages: "Javascript, Python, Css, Html",
+      technologies: "Three.js, Nodejs, Selenium, Heroku, Travis CI, AppVeyor,  Dat.gui, Istanbul, Mocha, Electron",
+      github: "https://github.com/SSGL-SEP",
+      demo: "https://ssgl-sep.herokuapp.com/"
+    },
+    {
+      id: 4,
+      title: "Portfolio",
+      description: "My personal portfolio for displaying my projects.",
+      type: "Personal project, Free time",
+      languages: "Javascript, Css, Html",
+      technologies: "React, Sass",
+      github: "https://github.com/Aleksuo/react-portfolio",
+      demo: "https://aleksuo.github.io/react-portfolio/"
+    }
+  ]
+
   return (
     <div className="container">
       { width < breakpoint ?
@@ -31,20 +74,10 @@ function App() {
         {
           width < breakpoint ?
             <Carousel arrows dots slidesPerPage={1} infinite>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
+              {projects.map(project => <Card project={project} key={project.id}></Card>)}
             </Carousel> :
             <Carousel arrows dots slidesPerPage={3} infinite>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
+              {projects.map(project => <Card project={project} key={project.id}></Card>)}
             </Carousel>
         }
       </section>
