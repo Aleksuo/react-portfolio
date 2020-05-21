@@ -28,8 +28,8 @@ function Card(props) {
       <h1><FancyTitle>{project.title}</FancyTitle></h1>
       <div></div>
       <div>
-        <i className="fas fa-code huge"></i>
-        <i className="fas fa-external-link-alt huge"></i>
+        <a href={project.github} target="_blank" rel="noopener noreferrer"><i className="fas fa-code huge" ></i></a>
+        <a href={project.demo} target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt huge" ></i></a>
       </div>
     </div>
   )

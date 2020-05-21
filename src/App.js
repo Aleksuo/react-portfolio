@@ -53,7 +53,7 @@ function App() {
       type: "Personal project, Free time",
       languages: "Javascript, Css, Html",
       technologies: "React, Sass",
-      img: "/img/portfolio.png",
+      img: "/img/portfolio.PNG",
       github: "https://github.com/Aleksuo/react-portfolio",
       demo: "https://aleksuo.github.io/react-portfolio/"
     }
