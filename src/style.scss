@@ -139,7 +139,7 @@ section:nth-of-type(2n){
   background-repeat: no-repeat;
   background-position: center;
   width: 30vw;
-  height: 70vh;
+  height: 30vw;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
   display: grid;
   grid-auto-rows: 1fr;
@@ -147,8 +147,8 @@ section:nth-of-type(2n){
   align-items: center;
   grid-gap:1em;
   border-top: 0.35em ridge #BF6464;
-  border-top-left-radius: 5em;
-  border-top-right-radius: 5em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
   border-bottom-left-radius: -1em;
   border-bottom-right-radius: -1em;
 }
