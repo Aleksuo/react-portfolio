@@ -12,7 +12,7 @@ function ProjectsPage(props){
     const projects = data
     return(
       <Section title="Projects" id="Projects">  
-              <Carousel arrows dots slidesPerPage={display} infinite>
+              <Carousel dots slidesPerPage={display} infinite arrowLeft={<i className="fas fa-chevron-left huge"></i>} arrowRight={<i className="fas fa-chevron-right huge"></i>} addArrowClickHandler>
                 {projects.map(project => <Card project={project} key={project.id}></Card>)}
               </Carousel> 
       </Section>

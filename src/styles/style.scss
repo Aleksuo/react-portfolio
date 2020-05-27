@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+$primary-color-light: #312A37;
+$primary-color-dark: #2A2131;
+$accent-color: #BF6464; 
+
 *{
   padding: 0px;
   margin: 0px;
@@ -113,7 +117,7 @@ section {
   scroll-snap-stop: always;
   scroll-snap-align: center;
   height: 100vh;
-  background-color: #312A37;
+  background-color: $primary-color-light;
 }
 section:nth-of-type(2n){
   background-color: #2A2131;
@@ -158,9 +162,10 @@ section:nth-of-type(2n){
     position: relative;
     width: 80vw;
     height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color:#1E1824;
-    background-image: url("https://via.placeholder.com/512");
-    background-size: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     border-radius: 2px;
     display: grid;
@@ -168,6 +173,12 @@ section:nth-of-type(2n){
     justify-content: space-around;
     align-items: center;
     grid-gap:1em;
+    border-top: 0.35em ridge #BF6464;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: -1em;
+  border-bottom-right-radius: -1em;
+
   }
 }
 
@@ -187,7 +198,7 @@ section:nth-of-type(2n){
   cursor: pointer;
   &:hover{
     clip-path: circle(100%);
-    background: #312A37;
+    background: $primary-color-light;
   }
 }
 
@@ -208,4 +219,20 @@ section:nth-of-type(2n){
   grid-template-columns: repeat(2,1fr);
   margin: auto;
   grid-gap: 3em;
+}
+
+.BrainhubCarousel__arrows {
+  background-color: #BF6464;
+  &:hover {
+    transition: 0.3s;
+    background-color: !important white;
+    cursor: pointer;
+  }
+  &:enabled {
+    background-color:#BF6464;
+  }
+}
+
+.BrainhubCarousel__dot{
+  background-color: #BF6464;
 }
