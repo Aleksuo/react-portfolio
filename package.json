@@ -40,7 +40,8 @@
     "collectCoverageFrom":[
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
-      "!<rootDir>/path/to/dir/"
+      "!<rootDir>/path/to/dir/",
+      "!src/index.js"
     ],
     "coverageReporters": ["lcov"]
   }
