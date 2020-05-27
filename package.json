@@ -4,8 +4,6 @@
   "private": true,
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.15.3",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -33,5 +31,9 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Aleksuo.github.io/react-portfolio/"
+  "homepage": "https://Aleksuo.github.io/react-portfolio/",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0"
+  }
 }
