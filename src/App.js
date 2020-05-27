@@ -3,25 +3,12 @@ import useViewPort from './Hooks/UseViewPort'
 import Card from './Components/Card'
 import Navbar from './Components/Navbar'
 import Introduction from './Components/Introduction'
-import FancyTitle from './Components/FancyTitle'
+import Section from './Components/Section'
 import data from './data/data.json'
 import './style.scss'
 
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
-
-function Section(props){
-  const {title, id} = props
-
-  return(
-    <section id={id}>
-      <div className="section-header">
-          <h1><FancyTitle>{title}</FancyTitle></h1>
-      </div>
-      {props.children}
-    </section>
-  )
-}
 
 function App() {
   const {width} = useViewPort()
