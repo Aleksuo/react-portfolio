@@ -10,6 +10,19 @@ import './style.scss'
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
 
+function Section(props){
+  const {title, id} = props
+
+  return(
+    <section id={id}>
+      <div className="section-header">
+          <h1><FancyTitle>{title}</FancyTitle></h1>
+      </div>
+      {props.children}
+    </section>
+  )
+}
+
 function App() {
   const {width} = useViewPort()
   const projects = data;
@@ -20,18 +33,12 @@ function App() {
       { width < breakpoint ?
          <div></div>: <Navbar></Navbar>
       }
-      <section id="Home" >
-        <div className="section-header">
-          <h1><FancyTitle>Suoranta</FancyTitle></h1>
-        </div>
+      <Section title="Suoranta" id="Home">
         <Introduction></Introduction>
-      </section>
+      </Section>
 
-      <section id="Projects">
-        <div className="section-header">
-        < h1><FancyTitle>Projects</FancyTitle></h1>
-        </div>
-        {
+      <Section title="Projects" id="Projects">
+      {
           width < breakpoint ?
             <Carousel arrows dots slidesPerPage={1} infinite>
               {projects.map(project => <Card project={project} key={project.id}></Card>)}
@@ -40,12 +47,9 @@ function App() {
               {projects.map(project => <Card project={project} key={project.id}></Card>)}
             </Carousel>
         }
-      </section>
-      <section id="Contact">
-        <div className="section-header">
-          <h1><FancyTitle>Contact</FancyTitle></h1>
-        </div>
-      </section>
+      </Section>
+      <Section title="Contact" id="Contact">
+      </Section>
     </div>
   );
 }
