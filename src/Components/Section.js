@@ -1,5 +1,5 @@
 import React from 'react'
-import FancyTitle from './Components/FancyTitle'
+import FancyTitle from './FancyTitle'
 
 function Section(props){
     const {title, id} = props
