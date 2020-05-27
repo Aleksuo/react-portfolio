@@ -1,10 +1,10 @@
 import React from 'react'
 import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/react'
-import Introduction from './Introduction'
+import HomePage from './HomePage'
 
-test('component renders' , async() => {
+test('component renders' , async () => {
     const component = render(
-        <Introduction></Introduction>
+        <HomePage></HomePage>
     )
 })

@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/react'
 import FancyTitle from './FancyTitle'
 
-test('renders content' ,() => {
+test('renders content' , async () => {
     const component = render(
         <FancyTitle>Test</FancyTitle>
     )

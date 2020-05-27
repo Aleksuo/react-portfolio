@@ -15,7 +15,7 @@ const mockProject = {
 }
 
 
-test('renders text content' ,() => {
+test('renders text content' , async () => {
     const component = render(
         <Card project={mockProject}></Card>
     )
