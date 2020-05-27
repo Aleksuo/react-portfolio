@@ -1,5 +1,5 @@
 import React from 'react'
-import useViewPort from './hooks/UseViewPort'
+import useViewPort from './customhooks/UseViewPort'
 import Navbar from './components/Navbar'
 
 import HomePage from './components/HomePage'
