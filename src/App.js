@@ -1,10 +1,10 @@
 import React from 'react'
-import useViewPort from './Hooks/UseViewPort'
-import Navbar from './Components/Navbar'
+import useViewPort from './hooks/UseViewPort'
+import Navbar from './components/Navbar'
 
-import HomePage from './Components/HomePage'
-import ProjectsPage from './Components/ProjectsPage'
-import ContactPage from './Components/ContactPage'
+import HomePage from './components/HomePage'
+import ProjectsPage from './components/ProjectsPage'
+import ContactPage from './components/ContactPage'
 
 import './styles/style.scss'
 
