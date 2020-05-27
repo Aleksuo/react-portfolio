@@ -43,6 +43,6 @@
       "!<rootDir>/path/to/dir/",
       "!src/index.js"
     ],
-    "coverageReporters": ["lcov"]
+    "coverageReporters": ["lcov","text"]
   }
 }
