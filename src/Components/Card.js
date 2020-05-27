@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import FancyTitle from './FancyTitle'
 
 function Card(props) {
-  const [{ project }] = useState(props)
+  const {project} = props
   return (
     <div className="card" style={{backgroundImage: `url(${process.env.PUBLIC_URL+project.img})` }}>
       <div className="card-info">
