@@ -26,3 +26,4 @@ Before installing you'll need:
 ## Built With
 
 ## License
+* [MIT license](https://opensource.org/licenses/mit-license.php)
