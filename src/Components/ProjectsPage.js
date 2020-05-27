@@ -1,9 +1,9 @@
-import React from 'react'
+import React from './node_modules/react'
 import Section from './Section'
 import Card from './Card'
 
-import Carousel from '@brainhubeu/react-carousel'
-import '@brainhubeu/react-carousel/lib/style.css'
+import Carousel from './node_modules/@brainhubeu/react-carousel'
+import './node_modules/@brainhubeu/react-carousel/lib/style.css'
 
 import data from '../data/data.json'
 

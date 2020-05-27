@@ -1,4 +1,4 @@
-import React from 'react'
+import React from './node_modules/react'
 import Section from './Section'
 import Introduction from './Introduction'
 

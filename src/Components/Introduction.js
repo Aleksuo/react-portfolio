@@ -1,4 +1,4 @@
-import React from 'react'
+import React from './node_modules/react'
 import IconRow from './IconRow'
 import FancyTitle from './FancyTitle'
 
