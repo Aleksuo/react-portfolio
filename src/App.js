@@ -6,7 +6,7 @@ import HomePage from './Components/HomePage'
 import ProjectsPage from './Components/ProjectsPage'
 import ContactPage from './Components/ContactPage'
 
-import './style.scss'
+import './styles/style.scss'
 
 function App() {
   const {width} = useViewPort()
