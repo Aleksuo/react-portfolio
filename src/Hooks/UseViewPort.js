@@ -1,4 +1,4 @@
-import { useState, useEffect } from './node_modules/react';
+import { useState, useEffect } from 'react';
 
 
 function useViewPort() {
