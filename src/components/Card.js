@@ -1,31 +1,15 @@
 import React from 'react'
 import FancyTitle from './FancyTitle'
 import Icon from './Icon'
+import CardInfo from './CardInfo'
+
+
 
 function Card(props) {
   const {project} = props
   return (
     <div className="card" style={{backgroundImage: `url(${process.env.PUBLIC_URL+project.img})` }}>
-      <div className="card-info">
-        <div></div>
-        <div></div>
-        <div className="card-info-element">
-          <h3>Type:</h3>
-          {project.type}
-        </div>
-        <div className="card-info-element">
-          <h3>Description:</h3>
-          {project.description}
-        </div>
-        <div className="card-info-element">
-          <h3>Languages:</h3>
-          {project.languages}
-        </div>
-        <div className="card-info-element">
-        <h3>Technologies:</h3>
-        {project.technologies}
-      </div>
-      </div>
+      <CardInfo project={project}></CardInfo>
       <h1 ><FancyTitle>{project.title}</FancyTitle></h1>
       <div></div>
       <div className="card-icons huge">
