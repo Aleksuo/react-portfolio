@@ -1,5 +1,6 @@
 import React from 'react'
 import FancyTitle from './FancyTitle'
+import Icon from './Icon'
 
 function Card(props) {
   const {project} = props
@@ -27,9 +28,9 @@ function Card(props) {
       </div>
       <h1 ><FancyTitle>{project.title}</FancyTitle></h1>
       <div></div>
-      <div className="card-icons">
-        <a href={project.github} target="_blank" rel="noopener noreferrer"><i className="fas fa-code huge" ></i></a>
-        <a href={project.demo} target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt huge" ></i></a>
+      <div className="card-icons huge">
+        <Icon href={project.github} icon="fas fa-code" tooltip="Code"></Icon>
+        <Icon href={project.demo} icon="fas fa-external-link-alt" tooltip="Demo"></Icon>
       </div>
     </div>
   )
