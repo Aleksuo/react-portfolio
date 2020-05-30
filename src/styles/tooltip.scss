@@ -16,18 +16,18 @@
     font-size: 14px;
     position: absolute;
     z-index: 1;
-
     width: 120px;
     top: 100%;
     left: 50%;
-    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    margin-left: -60px; 
     
 }
 
 .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
-    bottom: 100%;  /* At the top of the tooltip */
+    bottom: 100%;  
     left: 50%;
     margin-left: -5px;
     border-width: 5px;

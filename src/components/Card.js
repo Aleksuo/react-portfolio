@@ -3,8 +3,6 @@ import FancyTitle from './FancyTitle'
 import Icon from './Icon'
 import CardInfo from './CardInfo'
 
-
-
 function Card(props) {
   const {project} = props
   return (
