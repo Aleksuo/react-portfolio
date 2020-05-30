@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-$primary-color-light: #312A37;
-$primary-color-dark: #2A2131;
-$accent-color: #BF6464; 
+@import './colors.scss';
 
 *{
   padding: 0px;
@@ -56,14 +53,14 @@ html{
 
 .nav-links a:hover{
   color: #BF6464;
-  transition: 0.5s;
+  transition: 0.3s;
   border-bottom: 3px dotted;
   
 }
 
 .nav-links a{
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .center{
@@ -98,7 +95,7 @@ i{
 }
 
 i:hover{
-  transition: 0.5s;
+  transition: 0.3s;
   color: white;
   cursor: pointer;
 }
@@ -236,3 +233,4 @@ section:nth-of-type(2n){
 .BrainhubCarousel__dot{
   background-color: #BF6464;
 }
+

@@ -26,7 +26,7 @@ function App() {
       <ProjectsPage display={display}></ProjectsPage>
       <ContactPage></ContactPage>
     </div>
-  );
+  )
 }
 
 export default App;
