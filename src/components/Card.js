@@ -13,8 +13,8 @@ function Card(props) {
       <h1 ><FancyTitle>{project.title}</FancyTitle></h1>
       <div></div>
       <div className="card-icons huge">
-        <Icon href={project.github} icon="fas fa-code" tooltip="Code"></Icon>
-        <Icon href={project.demo} icon="fas fa-external-link-alt" tooltip="Demo"></Icon>
+        <Icon link={project.github} icon="fas fa-code" tooltip="Code"></Icon>
+        <Icon link={project.demo} icon="fas fa-external-link-alt" tooltip="Demo"></Icon>
       </div>
     </div>
   )
