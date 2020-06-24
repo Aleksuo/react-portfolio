@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import Section from './Section'
 import Card from './Card'
 import Prismic from 'prismic-javascript'
@@ -10,7 +10,7 @@ import '@brainhubeu/react-carousel/lib/style.css'
 
 
 function ProjectsPage(props){
-  const [doc, setDocData] = React.useState(null)
+  const [doc, setDocData] = useState(null)
     const {display} = props
     
     React.useEffect(() => {

@@ -2,7 +2,7 @@ import React from 'react'
 import FancyTitle from './FancyTitle'
 import Icon from './Icon'
 import CardInfo from './CardInfo'
-import { Date, Link, RichText } from 'prismic-reactjs'
+import {RichText} from 'prismic-reactjs'
 
 function Card(props) {
   const {project} = props
