@@ -3,7 +3,6 @@ import {RichText } from 'prismic-reactjs'
 
 function CardInfo(props){
     const {type, description, languages, technologies} = props.project
-    console.log(type)
     return(
       <div className="card-info">
           <div></div>
