@@ -27,7 +27,6 @@ function ProjectsPage(props){
     }, [])
     if(!doc)
       return "Loading..."
-    console.log(doc)
     return(
       <Section title="Projects" id="Projects">  
               <Carousel dots slidesPerPage={display} infinite arrowLeft={<i className="fas fa-chevron-left huge"></i>} arrowRight={<i className="fas fa-chevron-right huge"></i>} addArrowClickHandler>
