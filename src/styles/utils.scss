@@ -1,0 +1,26 @@
+.center{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .center-bottom{
+    position: relative;
+    top: 100vh;
+    left: 50vw;
+    transform: translate(-50%, -100%);
+  }
+  .center-top{
+    position: absolute;
+    left: 50vw;
+    transform: translate(-50%, -100%);
+  }
+
+  .huge{
+    font-size: 48px;
+  }
+  
+  .accent-style{
+    color: #BF6464;
+  }

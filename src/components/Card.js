@@ -4,6 +4,8 @@ import Icon from './Icon'
 import CardInfo from './CardInfo'
 import {RichText} from 'prismic-reactjs'
 
+import '../styles/card.scss'
+
 function Card(props) {
   const {project} = props
   return (

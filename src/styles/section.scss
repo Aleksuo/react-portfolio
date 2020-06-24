@@ -1,0 +1,33 @@
+@import './colors.scss';
+
+.child {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 8vh;
+    align-items: center;
+    position: relative;
+    scroll-snap-stop: always;
+    scroll-snap-align: center;
+    height: 100vh;
+    background-color: $primary-color-light;
+  }
+  section:nth-of-type(2n){
+    background-color: $primary-color-dark;
+  } 
+  
+  .section-header{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    padding-left: 1em;
+    font-size: 32px;
+  }

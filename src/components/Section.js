@@ -1,6 +1,8 @@
 import React from 'react'
 import FancyTitle from './FancyTitle'
 
+import '../styles/section.scss'
+
 function Section(props){
     const {title, id} = props
   

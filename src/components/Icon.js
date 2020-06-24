@@ -2,6 +2,8 @@ import React, {Fragment} from 'react'
 import ConditionalWrapper from './ConditionalWrapper'
 import Tooltip from './Tooltip'
 
+import '../styles/icon.scss'
+
 function Icon(props) {
     const { icon, link, tooltip } = props
     let element =
