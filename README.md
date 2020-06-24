@@ -29,6 +29,7 @@ Before installing you'll need:
  * [React](https://github.com/facebook/react)
  * [Sass](https://github.com/sass/sass)
  * [react-carousel](https://github.com/brainhubeu/react-carousel)
+ * [Prismic.io](https://prismic.io/)
 
 ## License
 * [MIT license](https://opensource.org/licenses/mit-license.php)
