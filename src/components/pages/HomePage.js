@@ -1,6 +1,6 @@
 import React from 'react'
-import Section from './Section'
-import Introduction from './Introduction'
+import Section from '../Section'
+import Introduction from '../Introduction'
 
 function HomePage(){
     return(

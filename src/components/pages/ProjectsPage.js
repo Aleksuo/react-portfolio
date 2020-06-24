@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-import Section from './Section'
-import Card from './Card'
+import Section from '../Section'
+import Card from '../Card'
 import Prismic from 'prismic-javascript'
 
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
- import {client} from '../api'
+ import {client} from '../../api'
 
 
 
