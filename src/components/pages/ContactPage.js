@@ -30,7 +30,6 @@ function ContactPage() {
   }, [])
   if (!doc)
     return null
-  console.log(doc)
   return (
     <Section title="Contact" id="Contact">
       <div className="item-main">

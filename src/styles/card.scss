@@ -2,7 +2,7 @@
 
 .card{
     position: relative;
-    background-color: $card-color;
+    background-color: darken($card-color, 10%);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,7 +57,8 @@
     cursor: pointer;
     &:hover{
       clip-path: circle(100%);
-      background: $primary-color-light;
+      background: $accent-color;
+      opacity: 0.95;
       z-index: 2;
     }
   }
