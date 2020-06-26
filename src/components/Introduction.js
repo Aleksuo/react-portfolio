@@ -6,7 +6,7 @@ import FancyTitle from './FancyTitle'
 
 function Introduction() {
     return (
-      <div className="frontParagraph">
+      <div className="item-introduction">
         <h1 className="huge">
           <FancyTitle>Full Stack Developer</FancyTitle>
         </h1>

@@ -19,7 +19,7 @@ function App() {
     display = 3
   }
   return (
-    <div className="container">
+    <div>
       { width < breakpoint ?
          <div></div>: <Navbar></Navbar>
       }

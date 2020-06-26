@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import './colors.scss';
 
-*{
+* {
   padding: 0px;
   margin: 0px;
   color: white;
@@ -10,33 +10,122 @@
 }
 
 /*For some reason this is required to make scroll snapping work in chrome*/
-html,body{
+html,
+body {
   height: 100vh;
+  overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
+
 /*And this is needed to hide the other scroll bar...*/
-html{
+html {
   overflow-y: hidden;
 }
 
-.frontParagraph{
+.frontParagraph {
   text-align: center;
 }
 
 .BrainhubCarousel__arrows {
   background-color: #BF6464;
+
   &:hover {
     transition: 0.3s;
-    background-color: !important white;
+    background-color:  !important white;
     cursor: pointer;
   }
+
   &:enabled {
-    background-color:#BF6464;
+    background-color: #BF6464;
   }
 }
 
-.BrainhubCarousel__dot{
+.BrainhubCarousel__dot {
   background-color: #BF6464;
 }
 
+.container {
+  position: relative;
+  background-color: $content-background;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+  border-radius: 2px;
+}
+
+.circle-container {
+  position: relative;
+  background-color: $content-background;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 50%;
+  width: 50vmin;
+  height: 50vmin;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+  flex-direction: column;
+  z-index: 1;
+  transform-style: preserve-3d;
+}
+
+.circle-container::before{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  width: 30vmin;
+  height: 30vmin;
+  padding: 1em;
+  margin: 1em;
+  right: 25vmin;
+  background-color: $primary-color-dark;
+  z-index: -1;
+  transform: translateZ(-1px);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  animation: polygons 60s alternate infinite;
+}
+
+.circle-container::after{
+  content: '';
+  position: absolute;
+  width: 40vmin;
+  height: 40vmin;
+  padding: 1em;
+  margin: 1em;
+  left: 25vmin;
+  background-color: $accent-color;
+  z-index: -1;
+  transform: translateZ(-1px);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  animation: polygons 60s alternate infinite;
+}
+
+.vertical-overlap{
+  display:flex;
+}
+
+.accent-background{
+  background-color: $accent-color;
+}
+
+.primary-dark-background{
+  background-color: $primary-color-dark;
+}
+
+@keyframes polygons {
+  25% {
+    clip-path: polygon(20% 0%, 100% 38%, 70% 90%, 0% 100%);
+    background: $primary-color-dark;
+  }
+  50% {
+    clip-path: polygon(0 46%, 100% 15%, 55% 74%, 0 100%);
+    background: $accent-color;
+  }
+  75% {
+    clip-path: polygon(100% 38%, 100% 38%, 66% 100%, 0 53%);
+    background: cornflowerblue;
+  }
+}
