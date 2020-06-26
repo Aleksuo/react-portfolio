@@ -6,7 +6,7 @@ function FancyTitle(props){
         <span className="accent-style">
         >
         </span>
-        {props.children}_
+        {props.children}
         </span>)
 }
 
