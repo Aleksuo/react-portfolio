@@ -12,7 +12,10 @@
     scroll-snap-align: center;
     height: 100vh;
     background-color: $primary-color-dark;
-    
+  }
+
+  section:nth-of-type(3n){
+    background: linear-gradient( $primary-color-dark, lighten($primary-color-dark, 5%),$accent-color);
   }
 
   

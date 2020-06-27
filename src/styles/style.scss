@@ -12,6 +12,7 @@
 /*For some reason this is required to make scroll snapping work in chrome*/
 html,
 body {
+  
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
