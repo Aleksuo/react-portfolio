@@ -6,7 +6,7 @@
 }
 
 .tooltip .tooltiptext{
-    visibility: hidden;
+    opacity: 0;
     width: 120px;
     background: linear-gradient(to bottom right, darken(violet, 30%) , $accent-color 70%);
     padding: 5px 0;
@@ -21,7 +21,8 @@
     left: 50%;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
     margin-left: -60px; 
-    
+    transition: 0.3s;
+    visibility: hidden;
 }
 
 .tooltip .tooltiptext::after {
@@ -36,6 +37,8 @@
   }
 
 .tooltip:hover .tooltiptext{
+    transition: 0.3s;
+    opacity: 1;
     visibility: visible;
 }
 
