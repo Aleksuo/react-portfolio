@@ -9,18 +9,9 @@
   scroll-behavior: smooth;
 }
 
-/*For some reason this is required to make scroll snapping work in chrome*/
-html,
-body {
-  
-  height: 100vh;
+html{
   overflow-x: hidden;
   overflow-y: scroll;
-}
-
-/*And this is needed to hide the other scroll bar...*/
-html {
-  overflow-y: hidden;
 }
 
 .frontParagraph {

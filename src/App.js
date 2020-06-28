@@ -1,5 +1,6 @@
 import React from 'react'
 import useViewPort from './hooks/UseViewPort'
+import useScrollTracker from './hooks/UseScrollTracker'
 import Navbar from './components/Navbar'
 
 import HomePage from './components/pages/HomePage'
@@ -10,18 +11,19 @@ import './styles/style.scss'
 import './styles/utils.scss'
 
 function App() {
-  const {width} = useViewPort()
+  const { width } = useViewPort()
+  const { current } = useScrollTracker()
   const breakpoint = 1024
   let display
-  if(width < breakpoint){
+  if (width < breakpoint) {
     display = 1
-  }else{
+  } else {
     display = 3
   }
   return (
     <div>
-      { width < breakpoint ?
-         <div></div>: <Navbar></Navbar>
+      {width < breakpoint ?
+        <div></div> : <Navbar active={current}></Navbar>
       }
       <HomePage></HomePage>
       <ProjectsPage display={display}></ProjectsPage>
