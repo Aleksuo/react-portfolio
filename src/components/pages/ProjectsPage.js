@@ -30,7 +30,7 @@ function ProjectsPage(props) {
   return (
     <Section title="Projects" id="Projects">
       <div className="item-carousel">
-        <Carousel dots slidesPerPage={display} infinite arrowLeft={<i className="fas fa-chevron-left huge"></i>} arrowRight={<i className="fas fa-chevron-right huge"></i>} addArrowClickHandler>
+        <Carousel dots slidesPerPage={display} infinite  draggable={false} arrowLeft={<i className="fas fa-chevron-left huge"></i>} arrowRight={<i className="fas fa-chevron-right huge"></i>} addArrowClickHandler>
           {doc.map(project => <Card project={project.data} key={project.id} ></Card>)}
         </Carousel>
       </div>
