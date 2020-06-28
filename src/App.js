@@ -13,16 +13,19 @@ import './styles/utils.scss'
 function App() {
   const { width } = useViewPort()
   const { current } = useScrollTracker()
-  const breakpoint = 1024
+  const breakpoint_small = 1024
+  const breakpoint_medium = 1400
   let display
-  if (width < breakpoint) {
+  if (width < breakpoint_small) {
     display = 1
-  } else {
+  } else if(width < breakpoint_medium){
+    display = 2
+  }else{
     display = 3
   }
   return (
     <div>
-      {width < breakpoint ?
+      {width < breakpoint_small ?
         <div></div> : <Navbar active={current}></Navbar>
       }
       <HomePage></HomePage>
