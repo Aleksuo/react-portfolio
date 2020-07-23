@@ -16,7 +16,7 @@ nav{
   .nav-links{
     grid-column: 6/6;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 1em;
     padding: 0.5em;
     width: 10%;

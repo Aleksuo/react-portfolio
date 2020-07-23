@@ -14,6 +14,11 @@ const items = [
   },
   {
     id: 2,
+    name: "About",
+    link: "#About"
+  },
+  {
+    id: 3,
     name: "Contact",
     link: "#Contact"
   }
