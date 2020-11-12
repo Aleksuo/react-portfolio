@@ -3,18 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@brainhubeu/react-carousel": "^1.15.3",
-    "@testing-library/user-event": "^7.2.1",
+    "@brainhubeu/react-carousel": "^1.19.26",
+    "@testing-library/user-event": "^12.2.2",
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.7",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
-    "node-sass": "^4.14.1",
-    "prismic-javascript": "^3.0.0",
-    "prismic-reactjs": "^1.3.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "node-sass": "^5.0.0",
+    "prismic-javascript": "^3.0.2",
+    "prismic-reactjs": "^1.3.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.0",
     "typescript": "^4.0.5"
   },
   "scripts": {
@@ -40,8 +40,8 @@
   },
   "homepage": "https://Aleksuo.github.io/react-portfolio/",
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0"
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.2"
   },
   "jest": {
     "collectCoverageFrom": [
