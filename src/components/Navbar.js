@@ -12,11 +12,13 @@ const items = [
     name: "Projects",
     link: "#Projects"
   },
+    /*
   {
     id: 2,
     name: "About",
     link: "#About"
-  },
+  },*/
+
   {
     id: 3,
     name: "Contact",
