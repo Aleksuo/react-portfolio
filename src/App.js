@@ -31,7 +31,7 @@ function App() {
       }
       <HomePage></HomePage>
       <ProjectsPage display={display}></ProjectsPage>
-      <AboutPage></AboutPage>
+        {/*<AboutPage></AboutPage>*/}
       <ContactPage></ContactPage>
     </div>
   )
