@@ -1,9 +1,10 @@
 default:
   image: node
-  
+
 build-job:
   stage: build
   script:
+    - npm install -q --no-color --no-progress
     - npm run build
 
 test-job:
