@@ -6,7 +6,7 @@ import Navbar from './components/Navbar'
 import HomePage from './components/pages/HomePage'
 import ProjectsPage from './components/pages/ProjectsPage'
 import ContactPage from './components/pages/ContactPage'
-import AboutPage from './components/pages/AboutPage'
+//import AboutPage from './components/pages/AboutPage'
 
 import './styles/style.scss'
 import './styles/utils.scss'
