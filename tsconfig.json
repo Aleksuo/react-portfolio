@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noFallthroughCasesInSwitch": true,
     "target": "es5",
     "module": "esnext",
     "strict": true,
@@ -19,7 +20,6 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "noFallthroughCasesInSwitch": true,
   "include": [
     "src"
   ]
